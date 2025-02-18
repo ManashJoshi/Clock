@@ -1,0 +1,48 @@
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock with Timer and Alarm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>World Clock, Timer, and Alarm</h1>
+    <div class="clock">
+      <h2>World Clock</h2>
+      <div id="clocks">
+        <div id="local-time"></div>
+        <div id="new-york-time"></div>
+        <div id="london-time"></div>
+        <div id="tokyo-time"></div>
+      </div>
+    </div>
+    
+    <div class="timer">
+      <h2>Timer</h2>
+      <div>
+        <input type="number" id="timer-minutes" placeholder="Minutes">
+        <input type="number" id="timer-seconds" placeholder="Seconds">
+        <button onclick="startTimer()">Start Timer</button>
+        <button onclick="resetTimer()">Reset Timer</button>
+        <div id="timer-display">00:00</div>
+      </div>
+    </div>
+
+    <div class="alarm">
+      <h2>Alarm</h2>
+      <div>
+        <input type="time" id="alarm-time">
+        <button onclick="setAlarm()">Set Alarm</button>
+        <div id="alarm-status">No Alarm Set</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio for alarm sound -->
+  <audio id="alarm-sound" src="alarm-sound.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
