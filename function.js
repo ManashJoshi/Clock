@@ -1,4 +1,4 @@
-function.js:
+
 // Clock Functionality
 function updateClocks() {
   const localTime = new Date().toLocaleTimeString();
